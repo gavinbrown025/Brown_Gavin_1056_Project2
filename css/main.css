@@ -1,18 +1,195 @@
-@charset = "UTF-8";
+@charset="UTF-8";
+
+@font-face {
+    font-family: "Poppins";
+    src: url('../fonts/Poppins-webfont.eot');
+    src: url('../fonts/Poppins-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Poppins-webfont.woff') format('woff'),
+         url('../fonts/Poppins-webfont.ttf') format('truetype'),
+         url('../fonts-Poppins-webfont.svg#Poppins') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat Extra Bold";
+    src: url('../fonts/Montserrat-Extra-Bold-webfont.eot');
+    src: url('../fonts/Montserrat-Extra-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Montserrat-Extra-Bold-webfont.woff') format('woff'),
+         url('../fonts/Montserrat-Extra-Bold-webfont.ttf') format('truetype'),
+         url('../fonts-Montserrat-Extra-Bold.svg#MontserratExtraBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Bebas Neue Regular";
+    src: url('../fonts/Bebas-Neue-Regular-webfont.eot');
+    src: url('../fonts/Bebas-Neue-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Bebas-Neue-Regular-webfont.woff') format('woff'),
+         url('../fonts/Bebas-Neue-Regular-webfont.ttf') format('truetype'),
+         url('../fonts-Bebas-Neue-Regular-webfont.svg#BebasNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 a:link, a:visited, a:active { 
- 	text-decoration:none;	
+ 	text-decoration:none;
+ 	color: #201D1E;
+}	
+
+
+body {
+	font-family: "Poppins", Arial, sans-serif;
+	font-size:20px;
 }
 
-body{
-	font-family: Arial, Helvetica, sans-serif;
-	font-size:;
-	color:;
+aside {
+ 	font-family: 'MontserratMediumItalic', 'Montserrat', Arial, sans-serif;
+	font-size:16px;
+	color:#4D4D4D;
+	line-height: 16px;
+	text-align: center;
+	font-style: italic;	
+	margin: 30px auto;
+	padding:8px;
+	width: 660px;
+	border-bottom: 4px solid #4d4d4d;
+	border-top: 4px solid #4d4d4d;
+	}
+
+h2 {
+	font-family: "Bebas Neue", Arial, sans-serif;
+	font-size:56px;
+	color:#201D1E;
+	text-align: left;
+	text-shadow: 1px 1px 1px;
+	margin-top: 30px;
 }
 
-p {}
+h3 {
+	font-family: "Bebas Neue", Arial, sans-serif;
+	font-size:30px;
+	color:#201D1E;
+	text-align: center;
+	text-shadow: 1px 1px 1px;
+	font-style: italic;
+}
 
-#container {
-	width:;
+.hidden{
+	display:none;
+}
+
+.divider {
+	height: 2px;
+	background-color: #201D1E;
+}
+
+.container {
+	width:850PX;
+	padding: 0 40px;
 	margin: 0 auto;
+	background-color: rgb(250,250,250);
+}
+
+.bgTop{
+	background-image: url(../images/detourBG.png);
+	background-position: bottom 0 right 0; 
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.bgBeer {
+	background-image: url(../images/beerBG.png);
+	background-position: center; 
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+
+.p-main {
+	font-family: "Poppins", Arial, sans-serif;
+	font-size:20px;
+	color:#201D1E;
+	line-height: 24px;
+	text-align: left;
+	margin: 0 20px 30px 20px;
+}
+
+.p-sub {
+	font-family: 'MontserratMediumItalic', 'Montserrat', Arial, sans-serif;
+	font-style: italic;
+	font-size:20px;
+	color:#4D4D4D;
+	line-height: 20px;
+	text-align: center;
+}
+
+.hero{
+	margin-top: 20px;
+}
+
+.hero img {width: 100%}
+
+.valueCon{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10px;
+}
+.subHeader {
+	margin-top: 30px;
+	margin-bottom: 20px;
+	text-align: center;
+
+}
+
+.valueBox {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+
+.valueCon span {
+	font-family: 'MontserratMediumItalic', 'Montserrat', Arial, sans-serif;
+	font-weight: bolder;
+	letter-spacing: -3px;
+	font-size:54px;
+	color:#201D1E;
+	text-align: center;
+	text-shadow: 1px 1px 1px;
+	margin: 15px 0;
+}
+
+.value {
+	margin: 15px 20px;
+	height: 130px;
+}
+
+.beerCon {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.beer {
+	font-family: "Bebas Neue", Arial, sans-serif;
+	font-size:30px;
+	line-height: 36px;
+	color:#201D1E;
+	text-align: left;
+	margin: 30px 20px;
+	text-align: center;
+}
+
+footer {
+	margin: 20px;
+	text-align: right;
+	font-weight: bold;
+}
+
+.bottom {
+	height: 38px;
+	border-top: solid 2px #201D1E;
 }
